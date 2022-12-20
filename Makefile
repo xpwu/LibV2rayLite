@@ -26,6 +26,10 @@ downloadGoMobile:
 BuildMobile:
 	gomobile init
 	gomobile bind -v -ldflags='-s -w' github.com/2dust/AndroidLibV2rayLite
+	
+ios:
+	mkdir -p build
+	gomobile bind -a -ldflags "-s -w" -tags ios -target=ios -o build/libv2ray.xcframework github.com/2dust/AndroidLibV2rayLite
 
 all: asset pb fetchDep
 	@echo DONE
