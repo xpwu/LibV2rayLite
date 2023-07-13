@@ -1,3 +1,7 @@
+# Deprecated
+use: https://github.com/xpwu/AndroidLibXrayLite
+
+
 # AndroidLibV2rayLite
 
 
